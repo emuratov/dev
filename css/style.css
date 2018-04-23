@@ -17,6 +17,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.menu #logo {
+  color: #4742a9;
+}
 .menu a {
   text-decoration: none;
   color: aliceblue;
@@ -45,10 +48,14 @@ body {
 .header .headerText h1 {
   font-size: 3rem;
   text-align: center;
+  background-color: #4742a9;
+  padding: 0.5rem 2rem;
 }
 .header .headerText h3 {
   font-size: 2rem;
   text-align: center;
+  background-color: #4742a9;
+  padding: 0.5rem 2rem;
 }
 .header .headerText h3 a {
   color: #762722;
@@ -76,12 +83,29 @@ body {
   border-radius: 0.5rem;
 }
 .footer {
-  height: 10vh;
   background-image: url(../img/veb-dizajn-png.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  color: aliceblue;
+}
+.footer li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.footer .footerContact {
+  text-align: right;
+}
+.back {
+  position: fixed;
+  top: auto;
+  right: auto;
+  left: 3rem;
+  bottom: 3rem;
+}
+.back img {
+  fill: #762722;
 }
 /*# sourceMappingURL=style.css.map */

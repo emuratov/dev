@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <title>Разработка сайтов любой сложности</title>
     <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 <body>
     <div>
 
         <div class="menu">
-            <a href="#">Веб разработчик Евгений Муратов</a>
+            <a id="logo" href="#">DEV.emuratov.ru</a>
             <div class="mainMenu">
-                <a href="#whoIIm">Кто Я</a>
+                <a href="#whoIIm" onclick="scrollMenu('#whoIIm')">Кто Я</a>
                 <a href="#">Порфолио</a>
                 <a href="#">Цены</a>
                 <a href="#">Контакты</a>
             </div>
         </div>
-        <div class="header">
+        <div id="header" class="header">
             <div class="headerText">
                 <h1>СОЗДАНИЕ САЙТОВ ПОД КЛЮЧ</h1>
                 <h3>Я решаю <a href="#">ВСЕ</a> проблемы по созданию сайтов</h3>
@@ -50,8 +52,26 @@
         </div>
 
         <div class="footer">
-
+            <div class="about">
+                <ul>
+                    <li>Евгений Муратов</li>
+                    <li>г. Абакан, Россия</li>
+                </ul>
+            </div>
+            <div class="footerContact">
+                <ul>
+                    <li>+7 913 517 1004</li>
+                    <li>emuratov@yandex.ru</li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <div class="back">
+        <a href="#header" onclick="scrollMenu('#header')">  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEtSURBVGhD7daxSgNREIXhJe8gFhY+hwimUou8u0Ww9SEUIljFOeycZrMhzt25O/fG+eFAAiE7X7dDlmVZdq096roOgE9dtxgijrouMVNEl5gp4kfXFWYOsdN1gzmHYF1gLiFY05i/IliTGCuCNYUpRbAmMBbEi26uUIwV8a1rClOC4G+bweCPv2R8mAXBWTB4ljtmCeKg4/cwzFLEky4U44FgYRhPBFsds5HtZfwTDwRbgsFNuM3UvexD5olgJRjcgpuKupM9jx9PKkUwCwY34Bb3liKYBeOeF4KFYLwRbFXMq6wGgs1h8EzXaiNYVcxaCFYFM4fYymqHZ7hhohDMBYPXgDdZFIJNMbjJ/IpyK3uXRSEYMbgFNxV1I3sYP4aGG3BLlmVZlmX/oGH4BQxKPnDHqXUbAAAAAElFTkSuQmCC"></a>
+    </div>
+
+    <script src="js/main.js"></script>
+
 </body>
 </html>
