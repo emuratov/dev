@@ -5,15 +5,15 @@ body {
   margin: 0;
 }
 .content {
-  width: 1140px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 .menu {
   top: 0.7rem;
   position: absolute;
   height: 2rem;
+  width: 70%;
+  left: 15%;
   display: flex;
   justify-content: space-between;
 }
@@ -30,6 +30,7 @@ body {
   background-image: url(../img/veb-dizajn-png.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
 }
@@ -41,11 +42,13 @@ body {
   height: 100vh;
   align-items: center;
 }
-.header .headerText span {
+.header .headerText h1 {
   font-size: 3rem;
+  text-align: center;
 }
 .header .headerText h3 {
   font-size: 2rem;
+  text-align: center;
 }
 .header .headerText h3 a {
   color: #762722;
@@ -60,5 +63,25 @@ body {
   background: #762722;
   padding: .3em 1em;
   border-radius: 0.7rem;
+}
+.whoIIm {
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+.whoIIm img {
+  height: 80%;
+  width: auto;
+  margin: auto 0;
+  border-radius: 0.5rem;
+}
+.footer {
+  height: 10vh;
+  background-image: url(../img/veb-dizajn-png.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
