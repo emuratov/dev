@@ -73,6 +73,19 @@ body {
 }
 .sale {
   padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.sale .item {
+  padding: 3rem;
+}
+.sale span {
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 2rem ;
+  color: #762722;
 }
 .sale a {
   text-transform: uppercase;
@@ -169,6 +182,7 @@ h2 {
   color: aliceblue;
 }
 .footer li {
+  font-size: 1.2rem;
   text-decoration: none;
   list-style-type: none;
 }
