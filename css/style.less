@@ -80,14 +80,15 @@ body {
     border-radius: 0.7rem;
   }
 }
-h2{
+
+h2 {
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
   background-color: fade(#4742a9, 70%);
   padding: 0.5rem 2rem;
-
 }
+
 .whoIIm {
   height: 50vh;
   display: flex;
@@ -101,23 +102,72 @@ h2{
 
 }
 
-.working{
+.working {
   background-color: #272727;
   color: aliceblue;
   text-align: center;
-  .row{
+  .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-  }
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .workingColumn {
+      padding: 1rem 1rem;
 
-  img{
-    width: 70%;
+      i {
+        font-size: 10vh;
+        //color: #4742a9;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-align: center;
+
+      }
+      span {
+        line-height: 1.5rem;
+      }
+    }
+
+  }
+  img {
+    padding-top: 2rem;
+    width: 50%;
   }
 }
 
+.result {
+  color: black;
+  text-align: center;
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .workingColumn {
+      padding: 1rem 1rem;
 
+      i {
+        font-size: 10vh;
+        //color: #4742a9;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-align: center;
 
+      }
+      span {
+        line-height: 1.5rem;
+      }
+    }
+
+  }
+  img {
+    padding-top: 2rem;
+    width: 50%;
+  }
+}
 
 .footer {
   background-image: url(../img/veb-dizajn-png.jpg);
@@ -144,10 +194,10 @@ h2{
   left: 3rem;
   bottom: 1rem;
   transition: 0.5s;
-  img {
-    fill: #762722;
+  i {
+    font-size: 3rem;
+    color: #762722;
   }
-;
 
 }
 

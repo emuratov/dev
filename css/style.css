@@ -97,10 +97,54 @@ h2 {
 .working .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.working .row .workingColumn {
+  padding: 1rem 1rem;
+}
+.working .row .workingColumn i {
+  font-size: 10vh;
+}
+.working .row .workingColumn h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+}
+.working .row .workingColumn span {
+  line-height: 1.5rem;
 }
 .working img {
-  width: 70%;
+  padding-top: 2rem;
+  width: 50%;
+}
+.result {
+  color: black;
+  text-align: center;
+}
+.result .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.result .row .workingColumn {
+  padding: 1rem 1rem;
+}
+.result .row .workingColumn i {
+  font-size: 10vh;
+}
+.result .row .workingColumn h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+}
+.result .row .workingColumn span {
+  line-height: 1.5rem;
+}
+.result img {
+  padding-top: 2rem;
+  width: 50%;
 }
 .footer {
   background-image: url(../img/veb-dizajn-png.jpg);
@@ -126,7 +170,8 @@ h2 {
   bottom: 1rem;
   transition: 0.5s;
 }
-#back img {
-  fill: #762722;
+#back i {
+  font-size: 3rem;
+  color: #762722;
 }
 /*# sourceMappingURL=style.css.map */
