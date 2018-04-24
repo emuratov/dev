@@ -43,10 +43,10 @@ var Visible = function (target) {
         targetPosition.left < windowPosition.right) {
         // true
         console.log(document.getElementById('back'));
-        document.getElementById('back').style.visibility = 'hidden';
+        document.getElementById('back').style.opacity = 0;
         // console.log('видно')
     } else {
-        document.getElementById('back').style.visibility = 'visible';
+        document.getElementById('back').style.opacity = 1;
         // console.log(' не видно')
     }
     ;
