@@ -71,6 +71,19 @@ body {
   padding: .3em 1em;
   border-radius: 0.7rem;
 }
+.sale {
+  padding: 2rem 0;
+}
+.sale a {
+  text-transform: uppercase;
+  color: aliceblue;
+  font-size: 2rem;
+  text-decoration: none;
+  user-select: none;
+  background: #762722;
+  padding: .3em 2em;
+  border-radius: 0.7rem;
+}
 h2 {
   text-transform: uppercase;
   font-size: 2rem;
