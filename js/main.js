@@ -59,3 +59,14 @@ window.addEventListener('scroll', function () {
 
 // А также запустим функцию сразу. А то вдруг, элемент изначально видно
 Visible(element);
+
+
+function submitSale() {
+    console.log('disable');
+    document.getElementById('conteinerSale').style.left = '100%';
+};
+
+function showSale() {
+    console.log('show');
+    document.getElementById('conteinerSale').style.left = '10%';
+}

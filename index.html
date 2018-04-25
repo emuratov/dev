@@ -68,10 +68,10 @@
                 <span>Цена проекта не изменяется, она остается такой, о которой мы догоорились на берегу</span>
             </div>
         </div>
-        <div class="sale">
+        <div id="sale" class="sale">
             <div class="item">
                 <span>Закажите сайт прямо сейчас, и получите 2 месяца поддержки Вашего сайта в подарок!</span></div>
-            <div><a href="#">Заказать сайт</a></div>
+            <div><a onclick="showSale()">Заказать сайт</a></div>
         </div>
         <img src="img/people.png" alt="">
     </div>
@@ -101,7 +101,7 @@
             </div>
         </div>
         <div class="sale">
-            <div><a href="#">Сделать заказ</a></div>
+            <div><a onclick="showSale()">Сделать заказ</a></div>
         </div>
         <img src="img/ICT-horizontal.png" alt="">
 
@@ -135,6 +135,12 @@
         </div>
     </div>
 </div>
+
+<div id="conteinerSale">
+    <input type="text">
+    <div><a id="submitSale" onclick="submitSale()">Отправить</a></div>
+</div>
+
 
 <div id="back">
     <a href="#header" onclick="scrollMenu('#header')"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>

@@ -5,11 +5,11 @@ body {
   margin: 0;
 }
 .container {
-  z-index: 9999;
+  z-index: 999;
 }
 #particles-js {
   position: fixed;
-  z-index: -9999;
+  z-index: -999;
   height: 100vh;
   width: 100%;
 }
@@ -205,5 +205,28 @@ h2 {
 #back i {
   font-size: 3rem;
   color: #762722;
+}
+#conteinerSale {
+  width: 80%;
+  height: 80vh;
+  background-color: #4742a9;
+  position: fixed;
+  left: 100%;
+  top: 10%;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#conteinerSale a {
+  text-transform: uppercase;
+  color: aliceblue;
+  font-size: 2rem;
+  text-decoration: none;
+  user-select: none;
+  background: #762722;
+  padding: .3em 2em;
+  border-radius: 0.7rem;
 }
 /*# sourceMappingURL=style.css.map */
