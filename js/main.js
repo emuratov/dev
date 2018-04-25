@@ -42,7 +42,7 @@ var Visible = function (target) {
         targetPosition.right > windowPosition.left &&
         targetPosition.left < windowPosition.right) {
         // true
-        console.log(document.getElementById('back'));
+        // console.log(document.getElementById('back'));
         document.getElementById('back').style.opacity = 0;
         // console.log('видно')
     } else {
