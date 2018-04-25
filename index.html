@@ -20,7 +20,6 @@
     <div id="menu" class="menu">
         <a id="logo" href="#">DEV.emuratov.ru</a>
         <div class="mainMenu">
-
             <a href="#whoIIm" onclick="scrollMenu('#whoIIm')">Кто Я</a>
             <a href="#">Порфолио</a>
             <a href="#">Цены</a>
@@ -34,7 +33,7 @@
         <a href="#" onclick="scrollMenu('#whoIIm'); closeMobileMenu()">Порфолио</a>
         <a href="#" onclick="scrollMenu('#whoIIm'); closeMobileMenu()">Цены</a>
         <a href="#" onclick="scrollMenu('#whoIIm'); closeMobileMenu()">Контакты</a>
-        <a href=""></a>
+        <br><br><br><br>
         <div><i class="fa fa-phone" aria-hidden="true"></i><i>+7 913 517 1004</i></div>
     </div>
     <div class="parallax-window" data-parallax="scroll" data-image-src="img/veb-dizajn-png.jpg">
@@ -103,7 +102,7 @@
             <div class="workingColumn">
                 <i class="fa   fa-internet-explorer" aria-hidden="true"></i>
                 <h3>Работающий сайт</h3>
-                <span>Через адекватное время Вы получите полностью работающий сайт, размещенный на выбранном хостинге</span>
+                <span>Через адеква тное время Вы получите полностью работающий сайт, размещенный на выбранном хостинге</span>
             </div>
             <div class="workingColumn">
                 <i class="fa  fa-arrows-alt" aria-hidden="true"></i>
@@ -153,7 +152,11 @@
 </div>
 
 <div id="conteinerSale">
-    <input type="text">
+    <form action="saleComplite">
+        <div class="saleItems">
+            <input type="text" placeholder="Как к Вам обращаться?">
+        </div>
+    </form>
     <div><a id="submitSale" onclick="submitSale()">Отправить</a></div>
     <button onclick="closeSale()">[X] закрыть</button>
 
