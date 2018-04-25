@@ -30,10 +30,6 @@ body {
 }
 .header {
   height: 100vh;
-  background-image: url(../img/veb-dizajn-png.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   display: flex;
   justify-content: center;
 }
