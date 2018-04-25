@@ -260,6 +260,31 @@ h2 {
   }
 }
 
+
+
+.contact{
+  min-height: 50vh;
+  background-color:#272727;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  span, i{
+    font-size: 2rem;
+    color: aliceblue;
+  }
+  i{
+    padding: 1rem 0.5rem;
+  }
+  span{
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding-bottom: 4rem;
+  }
+}
+
+
+
 .footer {
   background-image: url(../img/veb-dizajn-png.jpg);
   background-repeat: no-repeat;
@@ -298,8 +323,8 @@ h2 {
   height: 80vh;
   background-color: #4742a9;
   position: fixed;
-  left: 0%;
-  //left: 100%;
+  //left: 0%;
+  left: 100%;
   top: 10%;
   transition: 0.5s;
 
@@ -323,6 +348,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     input{
+      width: 80vh;
       font-size: 1.5rem;
       margin-top: 0.5rem;
       background-color: #4742a9;
@@ -333,4 +359,15 @@ h2 {
       width: 100%;
     }
   }
+  span{
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 3rem;
+  }
+  .saleSubmitBtn{
+    border: 0;
+    margin: 5rem 0;
+  }
+
 }
