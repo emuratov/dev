@@ -37,6 +37,48 @@ body {
 .menu .mainMenu a {
   padding: 1rem;
 }
+#hamburgerMenu {
+  z-index: 9999;
+  opacity: 0;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  left: auto;
+  bottom: auto;
+  transition: 0.5s;
+}
+#hamburgerMenu i {
+  font-size: 2rem;
+  color: #762722;
+}
+#mobileMenu {
+  opacity: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: #4742a9;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#mobileMenu a,
+#mobileMenu i {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 10%;
+  font-size: 2rem;
+  color: aliceblue;
+}
+#mobileMenu i {
+  margin-right: 2rem;
+}
+#mobileMenu a:hover {
+  color: red;
+}
 .header {
   height: 100vh;
   display: flex;
@@ -89,7 +131,7 @@ body {
   background-color: #fff;
   border-radius: 1rem;
   font-size: 1.5rem;
-  padding: 1rem 2rem ;
+  padding: 1rem 2rem;
   color: #762722;
 }
 .sale a {

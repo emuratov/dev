@@ -16,6 +16,7 @@ function anim(duration) {
             1 > progress && (temp = requestAnimationFrame(step))
         })
     }
+
 };
 
 
@@ -44,9 +45,11 @@ var Visible = function (target) {
         // true
         // console.log(document.getElementById('back'));
         document.getElementById('back').style.opacity = 0;
+        document.getElementById('hamburgerMenu').style.opacity = 0;
         // console.log('видно')
     } else {
         document.getElementById('back').style.opacity = 1;
+        document.getElementById('hamburgerMenu').style.opacity = 1;
         // console.log(' не видно')
     }
     ;
@@ -61,7 +64,17 @@ window.addEventListener('scroll', function () {
 Visible(element);
 
 
-function submitSale() {
+function showMobileMenu() {
+    console.log('show menu');
+    document.getElementById('mobileMenu').style.opacity = '1';
+};
+
+function closeMobileMenu() {
+    console.log('disable menu');
+    document.getElementById('mobileMenu').style.opacity = '0';
+};
+
+function closeSale() {
     console.log('disable');
     document.getElementById('conteinerSale').style.left = '100%';
 };
