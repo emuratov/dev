@@ -67,11 +67,13 @@ Visible(element);
 function showMobileMenu() {
     console.log('show menu');
     document.getElementById('mobileMenu').style.opacity = '1';
+    document.getElementById('mobileMenu').style.left = '50%';
 };
 
 function closeMobileMenu() {
     console.log('disable menu');
     document.getElementById('mobileMenu').style.opacity = '0';
+    document.getElementById('mobileMenu').style.left = '100%';
 };
 
 function closeSale() {
