@@ -152,12 +152,24 @@
 </div>
 
 <div id="conteinerSale">
-    <form action="saleComplite">
+    <form >
         <div class="saleItems">
-            <input type="text" placeholder="Как к Вам обращаться?">
+            <input type="text" placeholder="Как к Вам обращаться?" required>
+            <hr>
         </div>
+        <div class="saleItems">
+            <input type="email" placeholder="Ваш e-mail" required>
+            <hr>
+        </div>
+        <div class="saleItems">
+            <input type="tel" pattern="[0123456789\+\-\(\)\s]+" placeholder="Ваш телефон" required>
+            <hr>
+        </div>
+
+        <input type="submit" value="Submit" />
     </form>
-    <div><a id="submitSale" onclick="submitSale()">Отправить</a></div>
+
+    <!--<div><a id="submitSale" onclick="submitSale()">Отправить</a></div>-->
     <button onclick="closeSale()">[X] закрыть</button>
 
 </div>
