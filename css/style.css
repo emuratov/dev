@@ -168,6 +168,18 @@ h2 {
   margin: auto 0;
   border-radius: 0.5rem;
 }
+.whoIIm ul {
+  max-width: 600px;
+}
+.whoIIm ul li {
+  list-style-type: none;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+.whoIIm ul i {
+  padding-right: 1rem;
+  color: #762722;
+}
 .working {
   background-color: #272727;
   color: aliceblue;
@@ -226,6 +238,24 @@ h2 {
 .result img {
   padding-top: 2rem;
   width: 50%;
+}
+.portfolio {
+  min-height: 50vh;
+  background-color: #272727;
+}
+.portfolio .portfolioItem {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.portfolio .portfolioItem .items {
+  padding: 2rem 0;
+}
+.portfolio .portfolioItem .items img {
+  border-radius: 0.5rem;
+}
+.price {
+  min-height: 50vh;
 }
 .contact {
   min-height: 50vh;
