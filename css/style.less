@@ -45,7 +45,8 @@ body {
     }
   }
 }
-#hamburgerMenu{
+
+#hamburgerMenu {
   z-index: 9999;
   opacity: 0;
   position: fixed;
@@ -61,7 +62,6 @@ body {
 
 }
 
-
 #mobileMenu {
   left: 100%;
   opacity: 0;
@@ -76,7 +76,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  a{
+  a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 5% 0;
@@ -86,18 +86,17 @@ body {
     text-align: center;
 
   }
-  i{
+  i {
     font-size: 2rem;
     color: aliceblue;
     text-align: center;
     margin-right: 2rem;
   }
-  a:hover{
+  a:hover {
     background-color: #606aa9;
   }
 
 }
-
 
 .header {
   height: 100vh;
@@ -240,7 +239,6 @@ h2 {
       padding: 1rem 1rem;
       max-width: 230px;
 
-
       i {
         font-size: 10vh;
         //color: #4742a9;
@@ -263,31 +261,27 @@ h2 {
   }
 }
 
-
-
-.contact{
+.contact {
   min-height: 50vh;
-  background-color:#272727;
+  background-color: #272727;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  span, i{
+  span, i {
     font-size: 2rem;
     color: aliceblue;
     text-align: center;
   }
-  i{
+  i {
     padding: 1rem 0.5rem;
   }
-  span{
+  span {
     color: aliceblue;
     font-size: 1.5rem;
     padding-bottom: 4rem;
   }
 }
-
-
 
 .footer {
   background-image: url(../img/veb-dizajn-png.jpg);
@@ -337,7 +331,7 @@ h2 {
   justify-content: space-around;
   align-items: center;
 
-  input[type="submit"]{
+  input[type="submit"] {
     text-transform: uppercase;
     color: aliceblue;
     font-size: 2rem;
@@ -348,17 +342,17 @@ h2 {
     border-radius: 0.7rem;
   }
 
-  form{
+  form {
     width: 80%;
     padding: auto 0;
   }
 
-  .saleItems{
+  .saleItems {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    input{
+    input {
       font-size: 1.5rem;
       width: 100%;
       margin-top: 0.5rem;
@@ -366,17 +360,17 @@ h2 {
       border: 0;
       outline: none;
     }
-    hr{
+    hr {
       width: 100%;
     }
   }
-  span{
+  span {
     color: aliceblue;
     font-size: 1.5rem;
     text-align: center;
     padding: 0 3rem;
   }
-  .saleSubmitBtn{
+  .saleSubmitBtn {
     border: 0;
     margin: 5rem 0;
   }
@@ -384,33 +378,37 @@ h2 {
 }
 
 @media (max-width: 900px) {
-  .sale{
-    span{
+  .sale {
+    span {
       display: none;
     }
   }
-  #mobileMenu{
-    i{
+
+  #mobileMenu {
+    i {
       display: none;
     }
   }
-  #menu{
+
+  #menu {
     display: none;
   }
- #conteinerSale{
-   height: 100vh;
-   padding: 0;
-   top:0;
-   input[type="submit"]{
-     font-size: 1.5rem;
-     padding: .3em 2em;
-     border-radius: 0.7rem;
-   }
- }
- .footer{
-   li{
-     font-size: 0.8rem;
-   }
- }
+
+  #conteinerSale {
+    height: 100vh;
+    padding: 0;
+    top: 0;
+    input[type="submit"] {
+      font-size: 1.5rem;
+      padding: .3em 2em;
+      border-radius: 0.7rem;
+    }
+  }
+
+  .footer {
+    li {
+      font-size: 0.8rem;
+    }
+  }
 
 }
