@@ -21,7 +21,7 @@
         <a id="logo" href="#">DEV.emuratov.ru</a>
         <div class="mainMenu">
             <a href="#whoIIm" onclick="scrollMenu('#whoIIm')">Кто Я</a>
-            <a href="#">Порфолио</a>
+            <a href="#portfolio" onclick="scrollMenu('#portfolio')">Порфолио</a>
             <a href="#">Цены</a>
             <a href="#contact" onclick="scrollMenu('#contact')">Контакты</a>
         </div>
@@ -30,7 +30,7 @@
     <div id="mobileMenu">
         <a href="#header" onclick="scrollMenu('#header'); closeMobileMenu()">Главная</a>
         <a href="#whoIIm" onclick="scrollMenu('#whoIIm'); closeMobileMenu()">Кто Я</a>
-        <a href="#" onclick="scrollMenu('#whoIIm'); closeMobileMenu()">Порфолио</a>
+        <a href="#portfolio" onclick="scrollMenu('#portfolio'); closeMobileMenu()">Порфолио</a>
         <a href="#" onclick="scrollMenu('#whoIIm'); closeMobileMenu()">Цены</a>
         <a href="#contact" onclick="scrollMenu('#contact'); closeMobileMenu()">Контакты</a>
         <br><br><br><br>
@@ -131,19 +131,39 @@
 
     </div>
 
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio">
         <h2>Портфолио</h2>
 
         <div class="portfolioItem">
             <div class="items">
                 <img src="img/ma_emuratov.jpg" alt="">
+                <section>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </section>
+                <div class="about">
+                    <i>Создать продающия сайт для фотографа</i><br>
+                    <i>Создать продающия сайт для фотографа</i><br>
+                    <i>Создать продающия сайт для фотографа</i><br>
+                    <i>Создать продающия сайт для фотографа</i><br>
+                    <i>Создать продающия сайт для фотографа</i><br>
+                </div>
             </div>
             <div class="items">
                 <img src="img/ma_mountains.jpg" alt="">
+                <section>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </section>
             </div>
             <div class="items">
                 <img src="img/ma_jamine.jpg" alt="">
+                <section>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </section>
             </div>
+
+        </div>
+        <div class="sale">
+            <div><a onclick="showSale()">Сделать заказ</a></div>
         </div>
 
     </div>
