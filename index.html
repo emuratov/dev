@@ -20,11 +20,10 @@
     <div id="menu" class="menu">
         <a id="logo" href="#">DEV.emuratov.ru</a>
         <div class="mainMenu">
-
             <a href="#whoIIm" onclick="scrollMenu('#whoIIm')">Кто Я</a>
             <a href="#">Порфолио</a>
             <a href="#">Цены</a>
-            <a href="#">Контакты</a>
+            <a href="#contact" onclick="scrollMenu('#contact')">Контакты</a>
         </div>
     </div>
 
@@ -33,8 +32,8 @@
         <a href="#whoIIm" onclick="scrollMenu('#whoIIm'); closeMobileMenu()">Кто Я</a>
         <a href="#" onclick="scrollMenu('#whoIIm'); closeMobileMenu()">Порфолио</a>
         <a href="#" onclick="scrollMenu('#whoIIm'); closeMobileMenu()">Цены</a>
-        <a href="#" onclick="scrollMenu('#whoIIm'); closeMobileMenu()">Контакты</a>
-        <a href=""></a>
+        <a href="#contact" onclick="scrollMenu('#contact'); closeMobileMenu()">Контакты</a>
+        <br><br><br><br>
         <div><i class="fa fa-phone" aria-hidden="true"></i><i>+7 913 517 1004</i></div>
     </div>
     <div class="parallax-window" data-parallax="scroll" data-image-src="img/veb-dizajn-png.jpg">
@@ -103,7 +102,7 @@
             <div class="workingColumn">
                 <i class="fa   fa-internet-explorer" aria-hidden="true"></i>
                 <h3>Работающий сайт</h3>
-                <span>Через адекватное время Вы получите полностью работающий сайт, размещенный на выбранном хостинге</span>
+                <span>Через адеква тное время Вы получите полностью работающий сайт, размещенный на выбранном хостинге</span>
             </div>
             <div class="workingColumn">
                 <i class="fa  fa-arrows-alt" aria-hidden="true"></i>
@@ -131,8 +130,22 @@
 
     </div>
 
-    <div class="contact content">
-
+    <div id="contact" class="contact">
+        <span>Готовы начать? Замечательно! Свяжитесь со мной, и мы обсудим Ваш проект!</span>
+        <div>
+            <i class="fa fa-telegram" aria-hidden="true"></i>
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>+7 913 517 1004</span>
+        </div>
+        <div>
+            <i class="fa fa-skype" aria-hidden="true"></i>
+            <span>oranxl</span>
+        </div>
+        <div>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>emuratov@yandex.ru</span>
+        </div>
 
     </div>
 
@@ -153,8 +166,29 @@
 </div>
 
 <div id="conteinerSale">
-    <input type="text">
-    <div><a id="submitSale" onclick="submitSale()">Отправить</a></div>
+    <span>Готовы начать? Замечательно! Оставьте заявку, и я свяжусь с Вами в самые кротчайшие сроки!</span>
+    <form >
+        <div class="saleItems">
+            <input type="text" placeholder="Как к Вам обращаться?" required>
+            <hr>
+        </div>
+        <div class="saleItems">
+            <input type="email" placeholder="Ваш e-mail" required>
+            <hr>
+        </div>
+        <div class="saleItems">
+            <input type="tel" pattern="[0123456789\+\-\(\)\s]+" placeholder="+7 (999)-999-99-99" required>
+            <hr>
+        </div>
+        <div class="saleItems">
+            <input type="text" placeholder="Комментарий к заявке">
+            <hr>
+        </div>
+
+        <input class="saleSubmitBtn" type="submit" value="Отправить" />
+    </form>
+
+    <!--<div><a id="submitSale" onclick="submitSale()">Отправить</a></div>-->
     <button onclick="closeSale()">[X] закрыть</button>
 
 </div>

@@ -13,7 +13,6 @@ body {
 #particles-js {
   position: fixed;
   z-index: -999;
-
   height: 100vh;
   width: 100%;
 }
@@ -77,18 +76,24 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  a,i{
+  a{
     text-decoration: none;
     text-transform: uppercase;
-    padding-top: 10%;
+    padding: 5% 0;
+    width: 100%;
     font-size: 2rem;
     color: aliceblue;
+    text-align: center;
+
   }
   i{
+    font-size: 2rem;
+    color: aliceblue;
+    text-align: center;
     margin-right: 2rem;
   }
   a:hover{
-    color: red;
+    background-color: #606aa9;
   }
 
 }
@@ -255,6 +260,31 @@ h2 {
   }
 }
 
+
+
+.contact{
+  min-height: 50vh;
+  background-color:#272727;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  span, i{
+    font-size: 2rem;
+    color: aliceblue;
+  }
+  i{
+    padding: 1rem 0.5rem;
+  }
+  span{
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding-bottom: 4rem;
+  }
+}
+
+
+
 .footer {
   background-image: url(../img/veb-dizajn-png.jpg);
   background-repeat: no-repeat;
@@ -282,7 +312,7 @@ h2 {
   bottom: 1rem;
   transition: 0.5s;
   i {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #762722;
   }
 
@@ -293,6 +323,7 @@ h2 {
   height: 80vh;
   background-color: #4742a9;
   position: fixed;
+  //left: 0%;
   left: 100%;
   top: 10%;
   transition: 0.5s;
@@ -302,7 +333,7 @@ h2 {
   justify-content: space-around;
   align-items: center;
 
-  a {
+  input[type="submit"]{
     text-transform: uppercase;
     color: aliceblue;
     font-size: 2rem;
@@ -312,4 +343,31 @@ h2 {
     padding: .3em 2em;
     border-radius: 0.7rem;
   }
+  .saleItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input{
+      width: 80vh;
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      background-color: #4742a9;
+      border: 0;
+      outline: none;
+    }
+    hr{
+      width: 100%;
+    }
+  }
+  span{
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 3rem;
+  }
+  .saleSubmitBtn{
+    border: 0;
+    margin: 5rem 0;
+  }
+
 }

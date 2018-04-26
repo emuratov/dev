@@ -66,8 +66,13 @@ Visible(element);
 
 function showMobileMenu() {
     console.log('show menu');
-    document.getElementById('mobileMenu').style.opacity = '1';
-    document.getElementById('mobileMenu').style.left = '50%';
+    if (document.getElementById('mobileMenu').style.opacity == 0){
+        document.getElementById('mobileMenu').style.opacity = '1';
+        document.getElementById('mobileMenu').style.left = '50%';
+    } else{
+        document.getElementById('mobileMenu').style.opacity = '0';
+        document.getElementById('mobileMenu').style.left = '100%';
+    }
 };
 
 function closeMobileMenu() {
