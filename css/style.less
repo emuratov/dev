@@ -156,7 +156,7 @@ body {
     text-transform: uppercase;
     background-color: #fff;
     border-radius: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem 2rem;
     color: #762722;
   }
@@ -181,11 +181,12 @@ h2 {
 }
 
 .whoIIm {
-  height: 50vh;
+  min-height: 50vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   img {
-    height: 80%;
+    max-height: 400px;
     width: auto;
     margin: auto 0;
     border-radius: 0.5rem;
@@ -200,10 +201,11 @@ h2 {
   .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     .workingColumn {
       padding: 1rem 1rem;
+      max-width: 230px;
 
       i {
         font-size: 10vh;
@@ -219,7 +221,6 @@ h2 {
         line-height: 1.5rem;
       }
     }
-
   }
   img {
     padding-top: 2rem;
@@ -233,10 +234,12 @@ h2 {
   .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     .workingColumn {
       padding: 1rem 1rem;
+      max-width: 230px;
+
 
       i {
         font-size: 10vh;
@@ -272,6 +275,7 @@ h2 {
   span, i{
     font-size: 2rem;
     color: aliceblue;
+    text-align: center;
   }
   i{
     padding: 1rem 0.5rem;
@@ -324,7 +328,7 @@ h2 {
   background-color: #4742a9;
   position: fixed;
   //left: 0%;
-  left: 100%;
+  left: 200%;
   top: 10%;
   transition: 0.5s;
 
@@ -343,13 +347,20 @@ h2 {
     padding: .3em 2em;
     border-radius: 0.7rem;
   }
+
+  form{
+    width: 80%;
+    padding: auto 0;
+  }
+
   .saleItems{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     input{
-      width: 80vh;
       font-size: 1.5rem;
+      width: 100%;
       margin-top: 0.5rem;
       background-color: #4742a9;
       border: 0;
@@ -369,5 +380,37 @@ h2 {
     border: 0;
     margin: 5rem 0;
   }
+
+}
+
+@media (max-width: 900px) {
+  .sale{
+    span{
+      display: none;
+    }
+  }
+  #mobileMenu{
+    i{
+      display: none;
+    }
+  }
+  #menu{
+    display: none;
+  }
+ #conteinerSale{
+   height: 100vh;
+   padding: 0;
+   top:0;
+   input[type="submit"]{
+     font-size: 1.5rem;
+     padding: .3em 2em;
+     border-radius: 0.7rem;
+   }
+ }
+ .footer{
+   li{
+     font-size: 0.8rem;
+   }
+ }
 
 }

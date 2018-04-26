@@ -71,19 +71,19 @@ function showMobileMenu() {
         document.getElementById('mobileMenu').style.left = '50%';
     } else{
         document.getElementById('mobileMenu').style.opacity = '0';
-        document.getElementById('mobileMenu').style.left = '100%';
+        document.getElementById('mobileMenu').style.left = '200%';
     }
 };
 
 function closeMobileMenu() {
     console.log('disable menu');
     document.getElementById('mobileMenu').style.opacity = '0';
-    document.getElementById('mobileMenu').style.left = '100%';
+    document.getElementById('mobileMenu').style.left = '200%';
 };
 
 function closeSale() {
     console.log('disable');
-    document.getElementById('conteinerSale').style.left = '100%';
+    document.getElementById('conteinerSale').style.left = '200%';
 };
 
 function showSale() {
