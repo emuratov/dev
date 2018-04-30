@@ -369,6 +369,9 @@ h2 {
   height: 2px;
   background: darkgrey;
 }
+.price .item:hover {
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5);
+}
 .contact {
   min-height: 50vh;
   background-color: #272727;
