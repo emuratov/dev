@@ -253,6 +253,10 @@ h2 {
 }
 .portfolio .portfolioItem .items {
   position: relative;
+  max-width: 400px;
+}
+.portfolio .portfolioItem .items img {
+  width: 100%;
 }
 .portfolio .portfolioItem .items section {
   opacity: 0.7;
@@ -278,6 +282,16 @@ h2 {
   left: 0;
   height: 100%;
   width: 100%;
+}
+.portfolio .portfolioItem .items .about .aboutItem {
+  padding: 1rem 1rem;
+}
+.portfolio .portfolioItem .items .about .aboutItem h4 {
+  margin: 0.5rem 0;
+  text-decoration: underline;
+}
+.portfolio .portfolioItem .items .about .aboutItem p {
+  margin: 0.1rem;
 }
 .portfolio .portfolioItem .items .about:hover {
   opacity: 1;
