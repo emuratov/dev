@@ -22,7 +22,7 @@
         <div class="mainMenu">
             <a href="#whoIIm" onclick="scrollMenu('#whoIIm')">Кто Я</a>
             <a href="#portfolio" onclick="scrollMenu('#portfolio')">Порфолио</a>
-            <a href="#">Цены</a>
+            <a href="#price" onclick="scrollMenu('#price')">Цены</a>
             <a href="#contact" onclick="scrollMenu('#contact')">Контакты</a>
         </div>
     </div>
@@ -31,7 +31,7 @@
         <a href="#header" onclick="scrollMenu('#header'); closeMobileMenu()">Главная</a>
         <a href="#whoIIm" onclick="scrollMenu('#whoIIm'); closeMobileMenu()">Кто Я</a>
         <a href="#portfolio" onclick="scrollMenu('#portfolio'); closeMobileMenu()">Порфолио</a>
-        <a href="#" onclick="scrollMenu('#whoIIm'); closeMobileMenu()">Цены</a>
+        <a href="#price" onclick="scrollMenu('#price'); closeMobileMenu()">Цены</a>
         <a href="#contact" onclick="scrollMenu('#contact'); closeMobileMenu()">Контакты</a>
         <br><br><br><br>
         <div><i class="fa fa-phone" aria-hidden="true"></i><i>+7 913 517 1004</i></div>
@@ -174,17 +174,15 @@
 
     </div>
 
-    <div class="price content">
+    <div id="price" class="price content">
 
         <div class="item">
             <div class="name">
                 <h3>Landing Pages</h3>
                 <h1>Минимум</h1>
-                <div class="old">
-                    <h4>15 999 руб</h4>
-                </div>
+
                 <div class="new">
-                    <h4>10 999 руб</h4>
+                    <h4>14 999 руб</h4>
                 </div>
             </div>
 
@@ -209,10 +207,10 @@
                 <h3>Landing Pages</h3>
                 <h1>Стандарт</h1>
                 <div class="old">
-                    <h4>20 999 руб</h4>
+                    <h4>25 999 руб</h4>
                 </div>
                 <div class="new">
-                    <h4>15 999 руб</h4>
+                    <h4>19 999 руб</h4>
                 </div>
             </div>
 
@@ -243,7 +241,7 @@
                     <h4>35 999 руб</h4>
                 </div>
                 <div class="new">
-                    <h4>23 999 руб</h4>
+                    <h4>24 999 руб</h4>
                 </div>
             </div>
 
@@ -258,9 +256,8 @@
                     <li>Размещение на хостинге и регистрация домена на 1 год</li>
                     <li>Продающая анимация на сайте</li>
                     <li>Регистрация сайта в поисковых системах</li>
-                    <li>Наполнение уникальным контентом</li>
                     <li>Создание уникального торгового предложения</li>
-                    <li>3D анимация</li>
+                    <li>Настройка Яндекс.Директ</li>
                 </ul>
             </div>
             <div class="sale">
@@ -292,6 +289,16 @@
                 следующий раз обязательно обращусь именно к Евгению. Рекомендую!
             </section>
         </div>
+
+        <div class="item">
+            <section>
+                <p>Ольга</p>
+                Задача была проста и сложна одновременно - реанимировать совсем заброшенный сайт. Замечательная
+                слаженная работа получилась: все четко, быстро и, что немаловажно, за приемлемые деньги. Спасибо!
+                Рекомендую всем!
+            </section>
+        </div>
+
     </div>
 
     <div id="contact" class="contact">
@@ -352,8 +359,7 @@
         <input class="saleSubmitBtn" type="submit" value="Отправить"/>
     </form>
 
-    <!--<div><a id="submitSale" onclick="submitSale()">Отправить</a></div>-->
-    <button onclick="closeSale()">[X] закрыть</button>
+    <a onclick="closeSale()"><i class="fa fa-times" aria-hidden="true"></i></a>
 
 </div>
 

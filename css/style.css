@@ -484,7 +484,15 @@ h2 {
 }
 #conteinerSale .saleSubmitBtn {
   border: 0;
-  margin: 5rem 0;
+  display: block;
+  margin: 5rem auto;
+}
+#conteinerSale a {
+  color: darkgrey;
+  font-size: 5rem;
+}
+#conteinerSale a:hover {
+  color: aliceblue;
 }
 @media (max-width: 900px) {
   .sale span {
