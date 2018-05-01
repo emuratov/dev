@@ -342,21 +342,21 @@
 
 <div id="conteinerSale">
     <span>Готовы начать? Замечательно! Оставьте заявку, и я свяжусь с Вами в самые кротчайшие сроки!</span>
-    <form>
+    <form action= "post.php" method= "POST">
         <div class="saleItems">
-            <input type="text" placeholder="Как к Вам обращаться?" required>
+            <input type="text" name = "name" placeholder="Как к Вам обращаться?" required>
             <hr>
         </div>
         <div class="saleItems">
-            <input type="email" placeholder="Ваш e-mail" required>
+            <input type="email" name = "email" placeholder="Ваш e-mail" required>
             <hr>
         </div>
         <div class="saleItems">
-            <input type="tel" pattern="[0123456789\+\-\(\)\s]+" placeholder="+7 (999)-999-99-99" required>
+            <input type="tel" name = "phone" pattern="[0123456789\+\-\(\)\s]+" placeholder="+7 (999)-999-99-99" required>
             <hr>
         </div>
         <div class="saleItems">
-            <input type="text" placeholder="Комментарий к заявке">
+            <input type="text" name = "message" placeholder="Комментарий к заявке">
             <hr>
         </div>
 
